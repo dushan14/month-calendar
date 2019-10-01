@@ -1,0 +1,14 @@
+<div class="row" *ngFor="let rowIndex of monthRowsArray">
+  <div class="col"
+       *ngFor="let colIndex of monthColsArray">
+    <!-- dayComp-->
+    <app-day
+      [col]="colIndex"
+      [row]="rowIndex"
+      [date]="getDate(rowIndex, colIndex)">
+    </app-day>
+
+  </div>
+</div>
+
+

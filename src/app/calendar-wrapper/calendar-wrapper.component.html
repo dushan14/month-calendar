@@ -1,0 +1,17 @@
+<div class="container">
+
+  <div class="row controller">
+    <div class="col-2-xs citem btn btn-outline-primary" (click)="clickPrevious()">prev</div>
+    <div class="monthName"><h2>{{getMonth()}}</h2></div>
+    <div class="col-2-xs citem btn btn-outline-primary" (click)="clickNext()">next</div>
+    <div class="col-5-xs citem"><h1>{{year}}</h1></div>
+  </div>
+
+  <app-calendar
+      #calendar
+      [year]="year"
+      [month]="month"
+  ></app-calendar>
+
+</div>
+
